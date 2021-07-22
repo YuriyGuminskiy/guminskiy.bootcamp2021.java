@@ -10,7 +10,7 @@ public class Solution {
             shuffledChars[i * 2] = chars[i];
             shuffledChars[i * 2 + 1] = chars[chars.length - i - 1];
         }
-        if (shuffledChars.length % 2 == 1) {
+        if (shuffledChars.length % 2 == 1) { // if the array haves odd count of elements
             shuffledChars[shuffledChars.length - 1] = chars[chars.length / 2];
         }
         return Integer.parseInt(String.join("", shuffledChars));

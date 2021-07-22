@@ -4,7 +4,7 @@ public class Solution {
     public int solution(int[] arrayOfCoins) {
         int countOfHeads = 0;
 
-        for (int i = 0; i < arrayOfCoins.length; i++) {
+        for (int i = 0; i < arrayOfCoins.length; i++) { // calculated count of heads
             if (arrayOfCoins[i] == 0) {
                 countOfHeads++;
             }
@@ -17,7 +17,7 @@ public class Solution {
         }
     }
 
-    public static int calculateCountOfCoins(int[] arrayOfCoins, int side) {
+    public static int calculateCountOfCoins(int[] arrayOfCoins, int side) { // calculate count of turn
         int countOfCoins = 0;
 
         for (int i = 0; i < arrayOfCoins.length; i++) {
